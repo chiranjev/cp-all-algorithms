@@ -9,8 +9,8 @@ using namespace std;
 
 int partition(int *arr,int s,int e){
 
-	int i=s-1;
-	int j=s;
+	int i=s-1; // for elements <= pivot
+	int j=s;	  // for elements > pivot
 	int pivot=arr[e];
 	for(;j<e;j++){
 		if(arr[j]<=pivot){
